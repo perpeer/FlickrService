@@ -7,11 +7,29 @@
 //
 
 import UIKit
+import SDWebImage
 
 class PhotoCell: BaseCell {
   
+  var photo: Photo? {
+    didSet {
+      self.imageView.sd_setImage(with: self.photo?.imageUrl)
+    }
+  }
+  
+  let imageView: UIImageView = {
+    let iv = UIImageView()
+    iv.contentMode = .scaleAspectFill
+    iv.clipsToBounds = true
+    iv.layer.cornerRadius = 16
+    return iv
+  }()
+  
   override init(frame: CGRect) {
     super.init(frame: frame)
+    
+    addSubview(imageView)
+    imageView.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor)
   }
   
   required init?(coder aDecoder: NSCoder) {
