@@ -13,6 +13,19 @@
 		EA81A099237EA603007AAAFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA81A097237EA603007AAAFF /* Main.storyboard */; };
 		EA81A09B237EA605007AAAFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA81A09A237EA605007AAAFF /* Assets.xcassets */; };
 		EA81A09E237EA605007AAAFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA81A09C237EA605007AAAFF /* LaunchScreen.storyboard */; };
+		EA81A0B0237EA676007AAAFF /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0A7237EA675007AAAFF /* UIImageView+Extension.swift */; };
+		EA81A0B1237EA676007AAAFF /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0A8237EA675007AAAFF /* UIFont+Extension.swift */; };
+		EA81A0B2237EA676007AAAFF /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0A9237EA675007AAAFF /* Constant.swift */; };
+		EA81A0B3237EA676007AAAFF /* CAGradientLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0AA237EA675007AAAFF /* CAGradientLayer+Extension.swift */; };
+		EA81A0B4237EA676007AAAFF /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0AB237EA675007AAAFF /* UILabel+Extension.swift */; };
+		EA81A0B5237EA676007AAAFF /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0AC237EA675007AAAFF /* UIView+Layout.swift */; };
+		EA81A0B6237EA676007AAAFF /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0AD237EA676007AAAFF /* UIStackView+Extension.swift */; };
+		EA81A0B7237EA676007AAAFF /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0AE237EA676007AAAFF /* VerticalStackView.swift */; };
+		EA81A0B8237EA676007AAAFF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0AF237EA676007AAAFF /* UIColor+Extension.swift */; };
+		EA81A0BB237EA695007AAAFF /* BaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0BA237EA695007AAAFF /* BaseListController.swift */; };
+		EA81A0BD237EA6F8007AAAFF /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0BC237EA6F8007AAAFF /* HomeController.swift */; };
+		EA81A0C0237EA7BF007AAAFF /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0BF237EA7BF007AAAFF /* PhotoCell.swift */; };
+		EA81A0C2237EA7C8007AAAFF /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0C1237EA7C8007AAAFF /* BaseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +37,19 @@
 		EA81A09A237EA605007AAAFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA81A09D237EA605007AAAFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA81A09F237EA605007AAAFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA81A0A7237EA675007AAAFF /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		EA81A0A8237EA675007AAAFF /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		EA81A0A9237EA675007AAAFF /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		EA81A0AA237EA675007AAAFF /* CAGradientLayer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Extension.swift"; sourceTree = "<group>"; };
+		EA81A0AB237EA675007AAAFF /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		EA81A0AC237EA675007AAAFF /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		EA81A0AD237EA676007AAAFF /* UIStackView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		EA81A0AE237EA676007AAAFF /* VerticalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
+		EA81A0AF237EA676007AAAFF /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		EA81A0BA237EA695007AAAFF /* BaseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListController.swift; sourceTree = "<group>"; };
+		EA81A0BC237EA6F8007AAAFF /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		EA81A0BF237EA7BF007AAAFF /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		EA81A0C1237EA7C8007AAAFF /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,60 @@
 		EA81A090237EA603007AAAFF /* FlickrService */ = {
 			isa = PBXGroup;
 			children = (
+				EA81A097237EA603007AAAFF /* Main.storyboard */,
+				EA81A09A237EA605007AAAFF /* Assets.xcassets */,
+				EA81A09F237EA605007AAAFF /* Info.plist */,
+				EA81A0B9237EA680007AAAFF /* Home */,
+				EA81A0BE237EA7AC007AAAFF /* View */,
+				EA81A0A6237EA65E007AAAFF /* Helpers */,
+				EA81A0A5237EA63E007AAAFF /* Supporting Files */,
+			);
+			path = FlickrService;
+			sourceTree = "<group>";
+		};
+		EA81A0A5237EA63E007AAAFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				EA81A091237EA603007AAAFF /* AppDelegate.swift */,
 				EA81A093237EA603007AAAFF /* SceneDelegate.swift */,
 				EA81A095237EA603007AAAFF /* ViewController.swift */,
-				EA81A097237EA603007AAAFF /* Main.storyboard */,
-				EA81A09A237EA605007AAAFF /* Assets.xcassets */,
 				EA81A09C237EA605007AAAFF /* LaunchScreen.storyboard */,
-				EA81A09F237EA605007AAAFF /* Info.plist */,
 			);
-			path = FlickrService;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA81A0A6237EA65E007AAAFF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EA81A0AA237EA675007AAAFF /* CAGradientLayer+Extension.swift */,
+				EA81A0A9237EA675007AAAFF /* Constant.swift */,
+				EA81A0AF237EA676007AAAFF /* UIColor+Extension.swift */,
+				EA81A0A8237EA675007AAAFF /* UIFont+Extension.swift */,
+				EA81A0A7237EA675007AAAFF /* UIImageView+Extension.swift */,
+				EA81A0AB237EA675007AAAFF /* UILabel+Extension.swift */,
+				EA81A0AD237EA676007AAAFF /* UIStackView+Extension.swift */,
+				EA81A0AC237EA675007AAAFF /* UIView+Layout.swift */,
+				EA81A0AE237EA676007AAAFF /* VerticalStackView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EA81A0B9237EA680007AAAFF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EA81A0BA237EA695007AAAFF /* BaseListController.swift */,
+				EA81A0BC237EA6F8007AAAFF /* HomeController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EA81A0BE237EA7AC007AAAFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA81A0BF237EA7BF007AAAFF /* PhotoCell.swift */,
+				EA81A0C1237EA7C8007AAAFF /* BaseCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +209,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA81A0B4237EA676007AAAFF /* UILabel+Extension.swift in Sources */,
+				EA81A0C0237EA7BF007AAAFF /* PhotoCell.swift in Sources */,
+				EA81A0B7237EA676007AAAFF /* VerticalStackView.swift in Sources */,
+				EA81A0BD237EA6F8007AAAFF /* HomeController.swift in Sources */,
+				EA81A0C2237EA7C8007AAAFF /* BaseCell.swift in Sources */,
 				EA81A096237EA603007AAAFF /* ViewController.swift in Sources */,
+				EA81A0B8237EA676007AAAFF /* UIColor+Extension.swift in Sources */,
 				EA81A092237EA603007AAAFF /* AppDelegate.swift in Sources */,
+				EA81A0BB237EA695007AAAFF /* BaseListController.swift in Sources */,
+				EA81A0B6237EA676007AAAFF /* UIStackView+Extension.swift in Sources */,
+				EA81A0B3237EA676007AAAFF /* CAGradientLayer+Extension.swift in Sources */,
+				EA81A0B0237EA676007AAAFF /* UIImageView+Extension.swift in Sources */,
+				EA81A0B5237EA676007AAAFF /* UIView+Layout.swift in Sources */,
+				EA81A0B1237EA676007AAAFF /* UIFont+Extension.swift in Sources */,
 				EA81A094237EA603007AAAFF /* SceneDelegate.swift in Sources */,
+				EA81A0B2237EA676007AAAFF /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
