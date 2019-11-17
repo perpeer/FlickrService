@@ -50,6 +50,15 @@ extension HomeController: UICollectionViewDelegateFlowLayout {
   return cell
   }
   
+  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    guard let photo = photos?[indexPath.item] else { return }
+    let detailsController = DetailsController()
+    detailsController.photo = photo
+    let navController = UINavigationController(rootViewController: detailsController)
+    navController.modalPresentationStyle = .fullScreen
+    present(navController, animated: true, completion: nil)
+  }
+  
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     return .init(width: view.frame.width - 32, height: 400)
   }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,7 @@
 		EA81A0C5237EACE3007AAAFF /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0C4237EACE3007AAAFF /* Service.swift */; };
 		EA81A0CA237EAF62007AAAFF /* FlickrResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0C9237EAF62007AAAFF /* FlickrResults.swift */; };
 		EA81A0CD237EC26F007AAAFF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A0CC237EC26F007AAAFF /* Constants.swift */; };
+		EAB952BB23815A020091A72E /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB952BA23815A020091A72E /* DetailsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		EA81A0C4237EACE3007AAAFF /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		EA81A0C9237EAF62007AAAFF /* FlickrResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrResults.swift; sourceTree = "<group>"; };
 		EA81A0CC237EC26F007AAAFF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EAB952BA23815A020091A72E /* DetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
 		F2ABD9FAF5A9E97413BD99C6 /* Pods-FlickrService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrService.debug.xcconfig"; path = "Target Support Files/Pods-FlickrService/Pods-FlickrService.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +151,7 @@
 			children = (
 				EA81A0BA237EA695007AAAFF /* BaseListController.swift */,
 				EA81A0BC237EA6F8007AAAFF /* HomeController.swift */,
+				EAB952BA23815A020091A72E /* DetailsController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -192,7 +195,6 @@
 				F2ABD9FAF5A9E97413BD99C6 /* Pods-FlickrService.debug.xcconfig */,
 				212075978CC05FA71FF89648 /* Pods-FlickrService.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -323,6 +325,7 @@
 				EA81A0BB237EA695007AAAFF /* BaseListController.swift in Sources */,
 				EA81A0B6237EA676007AAAFF /* UIStackView+Extension.swift in Sources */,
 				EA81A0B3237EA676007AAAFF /* CAGradientLayer+Extension.swift in Sources */,
+				EAB952BB23815A020091A72E /* DetailsController.swift in Sources */,
 				EA81A0CA237EAF62007AAAFF /* FlickrResults.swift in Sources */,
 				EA81A0C5237EACE3007AAAFF /* Service.swift in Sources */,
 				EA81A0B0237EA676007AAAFF /* UIImageView+Extension.swift in Sources */,
