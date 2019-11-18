@@ -11,9 +11,9 @@ import Foundation
 class Service {
   static let shared = Service()
 
-  func fetchDataFrom(completionHandler: @escaping (FlickrResults?, Error?) -> Void) {
-    let url = URL(string: "https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=\(Constants.api_key)&format=json&nojsoncallback=1&safe_search=1&per_page=\(Constants.per_page)&page=1")
-    
+  func fetchDataFromWith(page: Int, completionHandler: @escaping (FlickrResults?, Error?) -> Void) {
+    let url = URL(string: "https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=\(Constants.api_key)&format=json&nojsoncallback=1&safe_search=1&per_page=\(Constants.per_page)&page=\(page)")
+    print("Service:fetchDataFromWith - Page:\(page)")
     URLSession.shared.dataTask(with: url!) { (data, resp, err) in
       if let err = err {
         print("fetchDataFromUrl failed: ", err)

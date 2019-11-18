@@ -11,6 +11,8 @@ import UIKit
 class HomeController: BaseListController {
   
   private let cellId = "cellId"
+  private var fetchingMore = false
+  private var nextPage = 1
   
   var photos: [Photo]? {
     didSet {
@@ -24,15 +26,23 @@ class HomeController: BaseListController {
     super.viewDidLoad()
     collectionView.backgroundColor = .white
     collectionView.register(PhotoCell.self, forCellWithReuseIdentifier: cellId)
-    
-    Service.shared.fetchDataFrom { (result, err) in
-      result?.photos?.photo.forEach({ (photo) in
-        print(photo.imageUrl)
-      })
-      
-      if let photos = result?.photos?.photo {
-          self.photos = photos
+  }
+  
+  fileprivate func dataFetchWith(page: Int) {
+    Service.shared.fetchDataFromWith(page: page) { (result, err) in
+      if let result = result {
+        if let photos = result.photos?.photo {
+          if self.photos == nil {
+            self.photos = photos
+          } else {
+            self.photos?.append(contentsOf: photos)
+          }
+        }
+        if let page = result.photos?.page {
+          self.nextPage = page + 1
+        }
       }
+      self.fetchingMore = false
     }
   }
 }
@@ -48,6 +58,18 @@ extension HomeController: UICollectionViewDelegateFlowLayout {
     cell.photo = photos[indexPath.item]
   }
   return cell
+  }
+  
+  override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    let offsetY = scrollView.contentOffset.y
+    let contentHeight = scrollView.contentSize.height
+    
+    if offsetY > contentHeight - scrollView.frame.height {
+      if !fetchingMore {
+        dataFetchWith(page: nextPage)
+        fetchingMore = true
+      }
+    }
   }
   
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
